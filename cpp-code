@@ -1,0 +1,125 @@
+#include <iostream>
+#include <stdlib.h>
+#include <cmath>
+ using namespace std;
+
+int 
+main () 
+{
+  
+ 
+srand (time (0));
+  
+ 
+ 
+int computer = rand () % 3 + 1;
+ 
+string roc = "rock";
+string pap = "paper";
+string sci = "scissor";
+  
+ 
+int object = 0;
+  
+ 
+cout << "choose any one of the following" << endl << "1 = Rock" << endl
+    << "2 = Paper" << endl << "3 = scissor"<<endl;
+  
+cin >> object;
+  cout<<"You choose -"<<endl;
+switch (object)
+    
+    {
+    
+case 1:
+      
+cout << roc<<endl;
+      
+break;
+    
+case 2:
+      
+cout << pap<<endl;
+      
+break;
+    
+case 3:
+      
+cout << sci<<endl;
+      
+break;
+    
+}
+  
+
+  cout<<"Computer choose -"<<endl;
+switch (computer)
+    {
+    
+case 1:
+      
+cout << roc<<endl;
+      
+break;
+    
+case 2:
+      
+cout << pap<<endl;
+      
+break;
+    
+case 3:
+      
+cout << sci<<endl;
+      
+break;
+    
+default:
+      
+std::cout << "Invalid Option\n";
+    
+}
+  
+ 
+ 
+    //Win Lose Draw Logic
+    if (object == computer)
+    {
+      
+cout << "Draw Game\n";
+    
+}
+  
+  else if (object == 1 && computer == 3)
+    {
+      
+cout << "You Win\n";
+    
+}
+  
+  else if (object == 3 && computer == 2)
+    {
+      
+cout << "You Win\n";
+    
+}
+  
+  else if (object == 2 && computer == 1)
+    {
+      
+cout << "You Win\n";
+    
+}
+  
+  else
+    {
+      
+cout << "Computer Wins!\n";
+    
+}
+
+ 
+}
+
+
+ 
